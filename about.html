@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            bottom: -100px;
+            width: 100%;
+            transition: bottom 0.5s ease-in-out;
+        }
+    </style>
+    <script>
+        window.addEventListener("scroll", function() {
+            let footer = document.querySelector("footer");
+            if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 10) {
+                footer.style.bottom = "0";
+            } else {
+                footer.style.bottom = "-100px";
+            }
+        });
+    </script>
+    
+</head>
+<body>
+    <header>About Us</header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <div class="container">
+        <p>
+            <b> About Tara Hotel 🏨  </b>
+            <br>
+            Welcome to Tara Hotel, your perfect destination for comfort and luxury! Established in 2023, Tara Hotel offers a warm and elegant atmosphere with top-notch services.  
+            
+            Located in the heart of the city, we provide a relaxing stay with well-furnished rooms, delicious multi-cuisine dining, and exceptional hospitality. Whether you're here for business or leisure, our friendly staff ensures a memorable experience.  
+            <br><br><br>
+        <b>Why Choose Tara Hotel?</b> <br>
+✔️ Comfortable Rooms: Well-furnished rooms with AC, Wi-Fi, and 24/7 service. <br>
+✔️ Delicious Dining: Enjoy a variety of cuisines at our in-house restaurant. <br>
+✔️ Prime Location: Close to shopping centers, tourist attractions, and transport hubs. <br>
+✔️ Banquet & Conference Halls: Ideal for business meetings and family events. <br>
+✔️ 24/7 Customer Support: Ensuring a hassle-free and memorable stay. <br>
+<br>
+At Tara Hotel, we believe in offering not just a stay but an experience of comfort, relaxation, and top-notch service. Whether you're visiting for business or leisure, we promise you a pleasant and memorable stay.
+            
+            </p>
+    </div>
+    <footer>© 2025 Our Restaurant</footer>
+</body>
+</html>

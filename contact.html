@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            bottom: -100px;
+            width: 100%;
+            transition: bottom 0.5s ease-in-out;
+        }
+    </style>
+    <script>
+        window.addEventListener("scroll", function() {
+            let footer = document.querySelector("footer");
+            if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 10) {
+                footer.style.bottom = "0";
+            } else {
+                footer.style.bottom = "-100px";
+            }
+        });
+    </script>
+
+</head>
+<body>
+    <header>Contact Us</header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <div class="container">
+        <h2>📍 Our Location</h2>
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3403.6801924784036!2d76.31040917422823!3d31.45047015059469!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391ad1cd7da73c05%3A0x9956b7f1eaa3b43c!2sHotel%20Tara!5e0!3m2!1sen!2sin!4v1740774267839!5m2!1sen!2sin" 
+             width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    
+        <a href="https://www.google.com/maps/place/Hotel+Tara/@31.4504702,76.3104092,17z/data=!4m9!3m8!1s0x391ad1cd7da73c05:0x9956b7f1eaa3b43c!5m2!4m1!1i2!8m2!3d31.4504656!4d76.3129841!16s%2Fg%2F11sd6z158x?entry=ttu&g_ep=EgoyMDI1MDIyNi4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="map-button">📍 Open in Google Maps</a>
+    
+        <h2>📞 Contact Information</h2>
+        <p>📍 Vill. & P.O. - Behdala, Nangal Road, NH503, Una, Himachal Pradesh 174303</p>
+        <p>📞 Phone: +91 9876543210</p>
+        <p>✉️ Email: contact@tarahotel.com</p>
+    </div>
+    
+    <footer>© 2025 Our Restaurant</footer>
+</body>
+</html>

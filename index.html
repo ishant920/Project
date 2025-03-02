@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Additional CSS for new sections */
+        .opening-hours {
+            background-color: #f8f8f8;
+            padding: 20px;
+            text-align: center;
+            margin: 20px auto;
+            width: 80%;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        .testimonials {
+            background-color: #fff3e0;
+            padding: 20px;
+            margin-top: 20px;
+            text-align: center;
+            border-top: 2px solid #ff6600;
+        }
+        .testimonial-item {
+            font-style: italic;
+            margin: 10px 0;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            bottom: -100px;
+            width: 100%;
+            transition: bottom 0.5s ease-in-out;
+        }
+    </style>
+    <script>
+        window.addEventListener("scroll", function() {
+            let footer = document.querySelector("footer");
+            if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 10) {
+                footer.style.bottom = "0";
+            } else {
+                footer.style.bottom = "-100px";
+            }
+        });
+    </script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        Welcome to Our Restaurant
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <img src="tara.png" width="70%" alt="Restaurant Image">
+        <h2>Delicious Food Served Fresh!</h2>
+        <p>Experience the best flavors with our carefully curated menu, made from the freshest ingredients.</p>
+        <a href="menu.html" class="btn">View Menu</a>
+    </section>
+
+    <!-- Opening Hours Section -->
+    <section class="opening-hours">
+        <h2>Opening Hours</h2>
+        <p>Monday - Friday: 10:00 AM - 10:00 PM</p>
+        <p>Saturday - Sunday: 9:00 AM - 11:00 PM</p>
+        <p style="color: green; font-weight: bold;">We are Open Now!</p>
+    </section>
+
+    <!-- About Section -->
+    <section class="container">
+        <h2>Why Choose Us?</h2>
+        <p>Our restaurant is committed to delivering the best dining experience with an inviting atmosphere and top-quality service.</p>
+        <ul>
+            <li>✅ Fresh & Quality Ingredients</li>
+            <li>✅ Authentic & Unique Flavors</li>
+            <li>✅ Friendly & Fast Service</li>
+        </ul>
+    </section>
+
+    <!-- Customer Testimonials Section -->
+    <section class="testimonials">
+        <h2>What Our Customers Say</h2>
+        <p class="testimonial-item">"Amazing food! The best dining experience I've ever had." - Sarah M.</p>
+        <p class="testimonial-item">"The service was outstanding and the flavors were unforgettable!" - Virender R.</p>
+        <p class="testimonial-item">"Highly recommended! Fresh ingredients and a warm atmosphere." - Priya K.</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        © 2025 Our Restaurant | All Rights Reserved
+    </footer>
+</body>
+</html>
